@@ -24,7 +24,7 @@ def remove_task(index):
     update_task_list()
 
 ui.label("To-Do List").classes("text-2xl font-bold")
-task_input = ui.input(placeholder="Enter a task...").props("autofocus")
+task_input = ui.input(placeholder="Enter a task").props("autofocus")
 ui.button("Add", on_click=lambda: add_task(task_input.value))
 
 task_container = ui.column()
